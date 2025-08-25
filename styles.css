@@ -442,6 +442,71 @@ body {
     line-height: 1.5;
 }
 
+/* Contact Link Styles */
+.contact-link {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    padding: 4px 8px;
+    margin: -4px -8px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.contact-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.contact-link:hover::after {
+    width: 100%;
+}
+
+.contact-link:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.phone-link:hover {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+}
+
+.email-link:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    color: #007bff;
+}
+
+.contact-link:active {
+    transform: scale(0.98);
+}
+
+/* Mobile touch improvements */
+@media (max-width: 768px) {
+    .contact-link {
+        padding: 8px 12px;
+        margin: -8px -12px;
+    }
+    
+    .contact-link:hover {
+        transform: none;
+    }
+    
+    .contact-link:active {
+        transform: scale(0.95);
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+}
+
 .contact-form {
     background: white;
     padding: 2rem;

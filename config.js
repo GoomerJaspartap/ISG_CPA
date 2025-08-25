@@ -84,16 +84,20 @@ const ISG_CPA_CONFIG = {
 
 // Function to update contact information on the page
 function updateContactInfo() {
-    // Update phone number
+    // Update phone number with clickable link
     const phoneElements = document.querySelectorAll('#phone-number, #footer-phone');
     phoneElements.forEach(el => {
-        if (el) el.textContent = ISG_CPA_CONFIG.contact.phone;
+        if (el) {
+            el.innerHTML = `<a href="tel:${ISG_CPA_CONFIG.contact.phone}" class="contact-link phone-link" aria-label="Call ${ISG_CPA_CONFIG.contact.phone}" title="Click to call">${ISG_CPA_CONFIG.contact.phone}</a>`;
+        }
     });
     
-    // Update email
+    // Update email with clickable link
     const emailElements = document.querySelectorAll('#email-address, #footer-email');
     emailElements.forEach(el => {
-        if (el) el.textContent = ISG_CPA_CONFIG.contact.email;
+        if (el) {
+            el.innerHTML = `<a href="mailto:${ISG_CPA_CONFIG.contact.email}" class="contact-link email-link" aria-label="Send email to ${ISG_CPA_CONFIG.contact.email}" title="Click to send email">${ISG_CPA_CONFIG.contact.email}</a>`;
+        }
     });
     
     // Update business hours

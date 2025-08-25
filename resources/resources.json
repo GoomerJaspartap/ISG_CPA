@@ -5,7 +5,7 @@
       "name": "Sample Tax Form",
       "description": "Sample tax form document for demonstration purposes",
       "category": ["tax", "compliance"],
-      "fileType": "TXT",
+      "fileType": "PDF",
       "fileName": "sample-tax-form.txt"
     },
     {
