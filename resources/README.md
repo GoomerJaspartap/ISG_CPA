@@ -56,6 +56,19 @@ You can assign multiple categories to a single resource:
 
 **Note:** Date is automatically added when you save the file!
 
+### **Multiple Categories for Websites**
+```json
+{
+  "id": 4,
+  "name": "Business Registration Portal",
+  "description": "Official business registration and tax portal",
+  "category": ["business", "tax", "compliance"],
+  "fileType": "WEBSITE",
+  "fileName": "",
+  "downloadUrl": "https://example.ca/business-portal"
+}
+```
+
 ## 📁 **Current Files in This Folder**
 
 - `sample-tax-form.txt` - Sample text file for demonstration
