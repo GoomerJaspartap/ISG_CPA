@@ -12,7 +12,7 @@
       "id": 2,
       "name": "CRA Website",
       "description": "Official Canada Revenue Agency website for tax forms and information",
-      "category": ["tax", "compliance"],
+      "category": ["tax", "website"],
       "fileType": "WEBSITE",
       "fileName": "",
       "downloadUrl": "https://www.canada.ca/en/revenue-agency.html"
