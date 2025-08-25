@@ -113,6 +113,18 @@ You can assign multiple categories to a single resource:
 
 **That's it!** File size and date are automatically calculated.
 
+### **With Multiple Categories**
+```json
+{
+  "id": 3,
+  "name": "Business Tax Compliance Guide",
+  "description": "Complete guide for business tax compliance and regulations",
+  "category": ["tax", "business", "compliance"],
+  "fileType": "PDF",
+  "fileName": "business-tax-compliance.pdf"
+}
+```
+
 ## 🌐 **Adding Website Resources**
 
 For external websites, use this format:
