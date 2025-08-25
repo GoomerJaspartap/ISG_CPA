@@ -560,11 +560,16 @@ class ResourcesManager {
 
     getFilteredResources() {
         return this.resources.filter(resource => {
-            const matchesCategory = this.currentCategory === 'all' || resource.category === this.currentCategory;
+            // Handle multiple categories (array) or single category (string)
+            const resourceCategories = Array.isArray(resource.category) ? resource.category : [resource.category];
+            
+            const matchesCategory = this.currentCategory === 'all' || 
+                resourceCategories.includes(this.currentCategory);
+            
             const matchesSearch = this.searchQuery === '' || 
                 resource.name.toLowerCase().includes(this.searchQuery) ||
                 resource.description.toLowerCase().includes(this.searchQuery) ||
-                resource.category.toLowerCase().includes(this.searchQuery);
+                resourceCategories.some(cat => cat.toLowerCase().includes(this.searchQuery));
             
             return matchesCategory && matchesSearch;
         });
@@ -572,9 +577,15 @@ class ResourcesManager {
 
     createResourceCard(resource) {
         const fileTypeInfo = this.fileTypes[resource.fileType] || {};
-        const categoryInfo = this.categories[resource.category] || {};
         const iconClass = fileTypeInfo.icon || resource.icon || 'fas fa-file';
         const iconColor = fileTypeInfo.color || '#6c757d';
+        
+        // Handle multiple categories
+        const resourceCategories = Array.isArray(resource.category) ? resource.category : [resource.category];
+        const categoryLabels = resourceCategories.map(cat => {
+            const categoryInfo = this.categories[cat] || {};
+            return categoryInfo.name || cat;
+        }).join(', ');
         
         // Determine if it's a website or downloadable file
         const isWebsite = resource.fileType === 'WEBSITE';
@@ -598,7 +609,13 @@ class ResourcesManager {
                     </div>
                 </div>
                 <div class="resource-meta">
-                    <span><i class="${categoryInfo.icon || 'fas fa-tag'}"></i> ${categoryInfo.name || resource.category}</span>
+                    <span class="categories-display">
+                        <i class="fas fa-tags"></i> 
+                        ${resourceCategories.map(cat => {
+                            const categoryInfo = this.categories[cat] || {};
+                            return `<span class="category-tag" style="background: ${this.getCategoryColor(cat)}">${categoryInfo.name || cat}</span>`;
+                        }).join('')}
+                    </span>
                     <span><i class="fas fa-calendar"></i> ${this.formatDate(resource.dateAdded)}</span>
                 </div>
                 <div class="resource-actions">
@@ -631,6 +648,17 @@ class ResourcesManager {
         const i = Math.floor(Math.log(bytes) / Math.log(k));
         
         return parseFloat((bytes / Math.pow(k, i)).toFixed(1)) + ' ' + sizes[i];
+    }
+
+    getCategoryColor(category) {
+        const colorMap = {
+            'tax': '#dc3545',
+            'business': '#007bff',
+            'financial': '#28a745',
+            'compliance': '#fd7e14',
+            'website': '#17a2b8'
+        };
+        return colorMap[category] || '#6c757d';
     }
 
     formatDate(dateString) {

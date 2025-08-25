@@ -828,6 +828,24 @@ body {
     color: #6c757d;
 }
 
+.categories-display {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.category-tag {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
 .resource-actions {
     display: flex;
     gap: 0.5rem;

@@ -27,6 +27,20 @@ The resources page will only show files that are:
 
 **Note:** File size and date are automatically calculated - you don't need to specify them!
 
+### **Multiple Categories (Optional)**
+You can assign multiple categories to a single resource:
+
+```json
+{
+  "id": 3,
+  "name": "Business Tax Guide",
+  "description": "Comprehensive guide for business tax compliance",
+  "category": ["tax", "business", "compliance"],
+  "fileType": "PDF",
+  "fileName": "business-tax-guide.pdf"
+}
+```
+
 ### **Option 2: Website/External Link**
 ```json
 {
