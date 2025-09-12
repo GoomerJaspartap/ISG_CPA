@@ -8,7 +8,7 @@ const ISG_CPA_CONFIG = {
     
     // Contact Information
     contact: {
-        phone: "(647)990-6507", // Update with your actual phone number
+        phone: "(647) 990-6507", // Update with your actual phone number
         email: "info@isgcpa.com", // Update with your actual email
         businessAddress : "2720 N Park Dr Unit# 50, Brampton, ON L6S 0E9"
         businessHours: "Monday - Friday: 9:00 AM - 5:00 PM\nSaturday: 9:00 AM - 1:00 PM\nSunday: Closed" // Update with your actual hours
