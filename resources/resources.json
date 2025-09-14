@@ -2,13 +2,13 @@
   "resources": [
     {
       "id": 1,
-      "name": "CRA Website",
-      "description": "Official Canada Revenue Agency website for tax forms and information",
-      "category": ["tax", "website"],
-      "fileType": "WEBSITE",
-      "fileName": "",
-      "downloadUrl": "https://www.canada.ca/en/revenue-agency.html"
+      "name": "2024 Personal Tax Checklist",
+      "description": "Download and review the following checklist to ensure you have all the necessary documents for your 2024 personal tax return.",
+      "category": ["tax", "financial"],
+      "fileType": "PDF",
+      "fileName": "2024 - T1 Annual Letter & Checklist .pdf"
     }
+    
   ],
   "categories": {
     "tax": {
@@ -25,17 +25,9 @@
       "name": "Financial",
       "description": "Financial statements and calculations",
       "icon": "fas fa-calculator"
-    },
-    "compliance": {
-      "name": "Compliance",
-      "description": "Regulatory and compliance documents",
-      "icon": "fas fa-clipboard-check"
-    },
-    "website": {
-      "name": "Websites",
-      "description": "Useful websites and online resources",
-      "icon": "fas fa-globe"
     }
+    
+    
   },
   "fileTypes": {
     "PDF": {
