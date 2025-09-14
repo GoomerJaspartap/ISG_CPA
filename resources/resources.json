@@ -1,0 +1,70 @@
+{
+  "resources": [
+    {
+      "id": 1,
+      "name": "CRA Website",
+      "description": "Official Canada Revenue Agency website for tax forms and information",
+      "category": ["tax", "website"],
+      "fileType": "WEBSITE",
+      "fileName": "",
+      "downloadUrl": "https://www.canada.ca/en/revenue-agency.html"
+    }
+  ],
+  "categories": {
+    "tax": {
+      "name": "Tax Forms",
+      "description": "Tax-related forms and guides",
+      "icon": "fas fa-file-pdf"
+    },
+    "business": {
+      "name": "Business",
+      "description": "Business registration and planning documents",
+      "icon": "fas fa-building"
+    },
+    "financial": {
+      "name": "Financial",
+      "description": "Financial statements and calculations",
+      "icon": "fas fa-calculator"
+    },
+    "compliance": {
+      "name": "Compliance",
+      "description": "Regulatory and compliance documents",
+      "icon": "fas fa-clipboard-check"
+    },
+    "website": {
+      "name": "Websites",
+      "description": "Useful websites and online resources",
+      "icon": "fas fa-globe"
+    }
+  },
+  "fileTypes": {
+    "PDF": {
+      "icon": "fas fa-file-pdf",
+      "color": "#dc3545"
+    },
+    "DOCX": {
+      "icon": "fas fa-file-word",
+      "color": "#007bff"
+    },
+    "XLSX": {
+      "icon": "fas fa-file-excel",
+      "color": "#28a745"
+    },
+    "PPTX": {
+      "icon": "fas fa-file-powerpoint",
+      "color": "#fd7e14"
+    },
+    "TXT": {
+      "icon": "fas fa-file-alt",
+      "color": "#6c757d"
+    },
+    "ZIP": {
+      "icon": "fas fa-file-archive",
+      "color": "#6f42c1"
+    },
+    "WEBSITE": {
+      "icon": "fas fa-globe",
+      "color": "#17a2b8"
+    }
+  }
+}

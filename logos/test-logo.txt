@@ -1,0 +1,33 @@
+LOGO PLACEHOLDER
+
+This file shows what you need to add to make the logo animation work.
+
+REQUIRED FILES:
+
+1. isg-cpa-logo.png - Your ISG CPA logo (120x120px recommended)
+2. quickbooks-logo.png - QuickBooks logo (60x60px recommended)
+3. sage-logo.png - Sage logo (55x55px recommended)
+4. xero-logo.png - Xero logo (50x50px recommended)
+5. wave-logo.png - Wave logo (45x45px recommended)
+6. freshbooks-logo.png - FreshBooks logo (52x52px recommended)
+7. zoho-logo.png - Zoho logo (48x48px recommended)
+
+FORMAT REQUIREMENTS:
+- PNG format (best for transparency)
+- Square dimensions
+- Transparent background (if possible)
+- High quality but optimized file size
+
+WHERE TO GET LOGOS:
+- Official company websites
+- Brand resource pages
+- Logo databases like BrandColors.com
+- Design resources like Flaticon
+
+QUICK START:
+1. Add your ISG CPA logo as isg-cpa-logo.png
+2. Add 2-3 business app logos to start
+3. The animation will automatically work!
+4. Add more logos gradually as needed
+
+The system is designed to be flexible - you can start with just a few logos and add more later by updating the logos.json file.
