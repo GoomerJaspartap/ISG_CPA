@@ -8,6 +8,7 @@ const ISG_CPA_CONFIG = {
     
     // Contact Information
     contact: {
+        name: "Inder S. Gill, CPA", // Your name
         phone: "(647)-990-6507", // Update with your actual phone number
         email: "info@isgcpa.ca", // Update with your actual email
         businessHours: "Monday - Friday: 9:00 AM - 5:00 PM\nSaturday: 9:00 AM - 1:00 PM\nSunday: Closed" // Update with your actual hours
@@ -62,7 +63,7 @@ const ISG_CPA_CONFIG = {
     // About Section Content
     about: {
         title: "About ISG CPA",
-        description: "With years of experience in accounting and tax services, ISG CPA has been helping businesses and individuals achieve their financial goals. Our team of certified professionals is committed to providing personalized, reliable, and efficient accounting solutions.",
+        description: "With years of experience,in accounting and tax services, ISG CPA has been helping businesses and individuals achieve their financial goals. Our team of certified professionals is committed to providing personalized, reliable, and efficient accounting solutions.",
         additionalInfo: "We understand that every client is unique, which is why we take the time to understand your specific needs and develop tailored strategies that work for you. Whether you're a small business owner, a growing corporation, or an individual taxpayer, we have the expertise to help you succeed.",
         features: [
             "Certified Professional Accountants",
@@ -84,6 +85,12 @@ const ISG_CPA_CONFIG = {
 
 // Function to update contact information on the page
 function updateContactInfo() {
+    // Update contact name
+    const nameElement = document.getElementById('contact-name');
+    if (nameElement) {
+        nameElement.textContent = ISG_CPA_CONFIG.contact.name;
+    }
+    
     // Update phone number with clickable link
     const phoneElements = document.querySelectorAll('#phone-number, #footer-phone');
     phoneElements.forEach(el => {
