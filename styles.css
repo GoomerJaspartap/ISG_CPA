@@ -210,20 +210,23 @@ body {
 }
 
 .hero-graphic {
-    width: 200px;
-    height: 200px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+    width: 100%;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
 }
 
 .hero-graphic i {
     font-size: 4rem;
     color: white;
+}
+
+.hero-image-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 /* Section Headers */
@@ -686,6 +689,17 @@ body {
         max-width: 120px;
     }
 
+    .hero-graphic {
+        width: 100%;
+        height: 500px;
+    }
+    
+    .hero-image-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
@@ -747,6 +761,11 @@ body {
     .nav-logo-img {
         height: 40px;
         max-width: 100px;
+    }
+
+    .hero-graphic {
+        width: 100%;
+        height: 450px;
     }
 }
 
