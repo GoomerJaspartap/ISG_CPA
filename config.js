@@ -63,7 +63,7 @@ const ISG_CPA_CONFIG = {
     // About Section Content
     about: {
         title: "About ISG CPA",
-        description: "With years of experience,in accounting and tax services, Inder Gill has been helping businesses and individuals achieve their financial goals. Our team of certified professionals is committed to providing personalized, reliable, and efficient accounting solutions.",
+        description: "With years of experience in accounting and tax services, Inder Gill has been helping businesses and individuals achieve their financial goals. Our team of certified professionals is committed to providing personalized, reliable, and efficient accounting solutions.",
         additionalInfo: "We understand that every client is unique, which is why we take the time to understand your specific needs and develop tailored strategies that work for you. Whether you're a small business owner, a growing corporation, or an individual taxpayer, we have the expertise to help you succeed.",
         features: [
             "Certified Professional Accountants",
